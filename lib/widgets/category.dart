@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:samiaalsaleh/widgets/drawer.dart';
 
 class Category extends StatelessWidget {
   @override
@@ -7,31 +8,27 @@ class Category extends StatelessWidget {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
+          appBar: AppBar(
+            iconTheme: new IconThemeData(color: Colors.black),
+            backgroundColor: Color(0xFFee9ca7),
+            elevation: 0,
+            actions: <Widget>[
+              Container(
+                margin: EdgeInsets.only(right: 10),
+                child: Image.asset(
+                  'images/ab.png',
+                  width: 50,
+                ),
+              )
+            ],
+          ),
+          drawer: Drawers(),
           backgroundColor: Color(0xFFee9ca7),
           body: Container(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      IconButton(
-                          alignment: Alignment.topRight,
-                          icon: Icon(Icons.menu),
-                          //TODO DRAWER MENU BUTTON
-                          onPressed: () {
-                            print('drawer menu prassed');
-                          }),
-                      Image.asset(
-                        'images/ab.png',
-                        width: 50,
-                        alignment: Alignment.topLeft,
-                      )
-                    ],
-                  ),
-                ),
                 Expanded(
                   flex: 1,
                   child: Container(
@@ -46,6 +43,7 @@ class Category extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Container(
+                    margin: EdgeInsets.all(10),
                     child: Text(
                       'Category',
                       style: TextStyle(
