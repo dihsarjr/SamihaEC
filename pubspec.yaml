@@ -49,6 +49,10 @@ flutter:
      - images/ab.png
      - images/abc.png
      - images/abcd.png
+     - images/BodyCare.png
+     - images/HairCare.png
+     - images/MakeUp.png
+     - images/SkinCare.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
