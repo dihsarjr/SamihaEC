@@ -32,114 +32,100 @@ class Category extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: 30, bottom: 30),
-                  child: IconButton(
-                      icon: Icon(Icons.arrow_back),
-                      //TODO back arrow button
-                      onPressed: () {
-                        print('drawer menu prassed');
-                      }),
-                ),
-                Container(
-                  padding: EdgeInsets.all(13),
-                  child: Text(
-                    'Category',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 40),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    child: IconButton(
+                        icon: Icon(Icons.arrow_back),
+                        //TODO back arrow button
+                        onPressed: () {
+                          print('drawer menu prassed');
+                        }),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.only(
-                    top: 80,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        margin: EdgeInsets.only(
-                          bottom: 10,
-                          top: 10,
-                          right: 10,
-                          left: 10,
-                        ),
-                        child: FlatButton(
-                            padding: EdgeInsets.all(0),
-                            child: Image.asset('images/HairCare.png'),
-                            //TODO HAIRCARE BUTTON IN CATEGORY PAGE
-                            onPressed: () {
-                              print('drawer HairCare prassed');
-                            }),
-                      ),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        margin: EdgeInsets.only(
-                          bottom: 10,
-                          top: 10,
-                          right: 10,
-                          left: 10,
-                        ),
-                        child: FlatButton(
-                            padding: EdgeInsets.all(0),
-                            child: Image.asset('images/BodyCare.png'),
-                            //TODO BodyCare BUTTON IN CATEGORY PAGE
-                            onPressed: () {
-                              print('drawer BodyCare prassed');
-                            }),
-                      ),
-                    ],
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    child: Text(
+                      'Category',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40),
+                    ),
                   ),
                 ),
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                Expanded(
+                  flex: 4,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: FlatButton(
+                                    padding: EdgeInsets.all(0),
+                                    child: Image.asset('images/HairCare.png'),
+                                    //TODO HAIRCARE BUTTON IN CATEGORY PAGE
+                                    onPressed: () {
+                                      print('drawer HairCare prassed');
+                                    }),
+                              ),
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: FlatButton(
+                                    padding: EdgeInsets.all(0),
+                                    child: Image.asset('images/BodyCare.png'),
+                                    //TODO BodyCare BUTTON IN CATEGORY PAGE
+                                    onPressed: () {
+                                      print('drawer BodyCare prassed');
+                                    }),
+                              ),
+                            ],
+                          ),
                         ),
-                        margin: EdgeInsets.only(
-                          bottom: 10,
-                          top: 10,
-                          right: 10,
-                          left: 10,
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: FlatButton(
+                                    padding: EdgeInsets.all(0),
+                                    child: Image.asset('images/SkinCare.png'),
+                                    //TODO SKINCARE BUTTON IN CATEGORY PAGE
+                                    onPressed: () {
+                                      print('drawer SkinCARE prassed');
+                                    }),
+                              ),
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: FlatButton(
+                                    padding: EdgeInsets.all(0),
+                                    child: Image.asset('images/MakeUp.png'),
+                                    //TODO MAKEUP BUTTON IN CATEGORY PAGE
+                                    onPressed: () {
+                                      print('drawer MAKEUP prassed');
+                                    }),
+                              ),
+                            ],
+                          ),
                         ),
-                        child: FlatButton(
-                            padding: EdgeInsets.all(0),
-                            child: Image.asset('images/SkinCare.png'),
-                            //TODO SKINCARE BUTTON IN CATEGORY PAGE
-                            onPressed: () {
-                              print('drawer SkinCARE prassed');
-                            }),
-                      ),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        margin: EdgeInsets.only(
-                          bottom: 10,
-                          top: 10,
-                          right: 10,
-                          left: 10,
-                        ),
-                        child: FlatButton(
-                            padding: EdgeInsets.all(0),
-                            child: Image.asset('images/MakeUp.png'),
-                            //TODO MAKEUP BUTTON IN CATEGORY PAGE
-                            onPressed: () {
-                              print('drawer MAKEUP prassed');
-                            }),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),
