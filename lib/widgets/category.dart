@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:samiaalsaleh/widgets/drawer.dart';
+import 'package:samiaalsaleh/widgets/navigation_bar.dart';
 
 class Category extends StatelessWidget {
   @override
@@ -127,6 +128,7 @@ class Category extends StatelessWidget {
               ],
             ),
           ),
+          bottomNavigationBar: NavigationBar(),
         ),
       ),
     );
