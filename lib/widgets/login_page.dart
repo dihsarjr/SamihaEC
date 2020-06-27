@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:samiaalsaleh/widgets/navigation_bar.dart';
 
 class LOGIN extends StatelessWidget {
   @override
@@ -10,9 +11,11 @@ class LOGIN extends StatelessWidget {
           backgroundColor: Color(0xFFee9ca7),
           body: Column(
             children: <Widget>[
-              Expanded(flex: 6, child: Image.asset('images/ab.png')),
-              Expanded(
-                flex: 10,
+              Container(
+                  padding: EdgeInsets.only(top: 50, bottom: 15),
+                  child: Image.asset('images/ab.png')),
+              Flexible(
+                fit: FlexFit.tight,
                 child: Stack(
                   alignment: Alignment(0.0, 0.0),
                   children: <Widget>[
@@ -56,14 +59,11 @@ class LOGIN extends StatelessWidget {
                                 child: FlatButton(
                                   child: Container(
                                     child: Center(
-                                      child: Expanded(
-                                        flex: 1,
-                                        child: Text(
-                                          'Login',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white),
-                                        ),
+                                      child: Text(
+                                        'Login',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
                                       ),
                                     ),
                                   ),
@@ -135,9 +135,24 @@ class LOGIN extends StatelessWidget {
                                 child: Container(
                                   margin: EdgeInsets.only(top: 20, bottom: 10),
                                   //TODO terms and conditions BUTTON IN LOGIN MENU
-                                  child: Text(
-                                    'By signing up, I agree to the terms and conditions',
-                                    style: TextStyle(fontSize: 10),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Text(
+                                        'By signing up, I agree to the',
+                                      ),
+                                      FlatButton(
+                                        padding: EdgeInsets.all(0),
+                                        child: Text(
+                                          ' terms and conditions',
+                                          style: TextStyle(color: Colors.blue),
+                                        ),
+                                        //TODO  terms and conditions Button setup
+                                        onPressed: () {
+                                          print(' terms and conditions');
+                                        },
+                                      ),
+                                    ],
                                   ),
                                 ),
                               )
@@ -149,12 +164,12 @@ class LOGIN extends StatelessWidget {
                   ],
                 ),
               ),
-              Expanded(
-                flex: 3,
-                child: Image.asset('images/abcd.png'),
-              )
+              Container(
+                  padding: EdgeInsets.only(top: 15, bottom: 50),
+                  child: Image.asset('images/abcd.png')),
             ],
           ),
+          bottomNavigationBar: NavigationBar(),
         ),
       ),
     );

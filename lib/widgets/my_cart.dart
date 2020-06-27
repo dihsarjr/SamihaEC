@@ -46,9 +46,8 @@ class MyCart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Expanded(
-                          flex: 1,
                           child: Container(
-                            height: 80,
+                            height: 120,
                             width: 80,
                             color: Colors.white,
                             child: Image(
