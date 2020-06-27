@@ -27,7 +27,7 @@ class MyCart extends StatelessWidget {
       ),
       Flexible(
         fit: FlexFit.tight,
-        child: Card(
+        child: Container(
           child: Container(
             margin: EdgeInsets.only(top: 10, bottom: 10),
             child: ListView.builder(
@@ -75,6 +75,14 @@ class MyCart extends StatelessWidget {
           ),
         ),
       ),
+      Center(
+        child: SizedBox(
+          width: 300,
+          child: Divider(
+            color: Color(0xFFee9ca7),
+          ),
+        ),
+      ),
       Padding(
         padding: EdgeInsets.only(bottom: 10, top: 10),
         child: Row(
@@ -85,6 +93,14 @@ class MyCart extends StatelessWidget {
             //TODO total amount function in my_cart
             Text('QAR 300'),
           ],
+        ),
+      ),
+      Center(
+        child: SizedBox(
+          width: 300,
+          child: Divider(
+            color: Color(0xFFee9ca7),
+          ),
         ),
       ),
       Card(

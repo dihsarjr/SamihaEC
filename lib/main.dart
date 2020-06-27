@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/category.dart';
-import 'package:samiaalsaleh/widgets/whish_list.dart';
+import 'package:samiaalsaleh/widgets/home_page.dart';
 
 void main() {
-  runApp(WhishList());
+  runApp(HomePage());
 }
 
 class MyApp extends StatelessWidget {
