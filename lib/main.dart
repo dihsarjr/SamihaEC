@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/home_page.dart';
+import 'package:samiaalsaleh/widgets/detailed_view.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(DetailedView());
 }
 
 class MyApp extends StatelessWidget {

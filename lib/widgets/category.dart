@@ -30,32 +30,26 @@ class Category extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    child: IconButton(
-                        icon: Icon(Icons.arrow_back),
-                        //TODO back arrow button
-                        onPressed: () {
-                          print('drawer menu prassed');
-                        }),
+                Container(
+                  child: IconButton(
+                      icon: Icon(Icons.arrow_back),
+                      //TODO back arrow button
+                      onPressed: () {
+                        print('drawer menu prassed');
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(20),
+                  child: Text(
+                    'Category',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40),
                   ),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    child: Text(
-                      'Category',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  flex: 4,
+                Flexible(
+                  fit: FlexFit.tight,
                   child: SingleChildScrollView(
                     child: Column(
                       children: <Widget>[
