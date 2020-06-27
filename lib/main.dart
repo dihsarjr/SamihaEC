@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/detailed_view.dart';
+import 'package:samiaalsaleh/widgets/full_detailed_view.dart';
 
 void main() {
   runApp(DetailedView());
