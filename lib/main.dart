@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/story.dart';
+import 'package:samiaalsaleh/widgets/sa_story2.dart';
 
 void main() {
-  runApp(Story());
+  runApp(SaStory());
 }
 
 class MyApp extends StatelessWidget {
