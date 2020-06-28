@@ -80,6 +80,7 @@ class WhishList extends StatelessWidget {
                       Text(
                         'Whish List',
                         style: TextStyle(
+                            fontFamily: 'Muli-Regular',
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 40),
@@ -122,16 +123,22 @@ class WhishList extends StatelessWidget {
                             ),
                             Text(
                               whishListItems[index].title,
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Muli-Medium'),
                             ),
                             Text(
                               whishListItems[index].category,
-                              style: TextStyle(fontSize: 15),
+                              style:
+                                  TextStyle(fontSize: 15, fontFamily: 'Muli'),
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                Text('QAR ${whishListItems[index].amount}'),
+                                Text(
+                                  'QAR ${whishListItems[index].amount}',
+                                  style: TextStyle(fontFamily: 'Muli'),
+                                ),
                                 IconButton(
                                     alignment: Alignment.centerRight,
                                     icon: Icon(

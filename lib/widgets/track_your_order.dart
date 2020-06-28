@@ -10,7 +10,7 @@ class TrackYourOrder extends StatelessWidget {
       title: 'Flutter Demo',
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xFFee9ca7),
+          backgroundColor: Color(0xFFFCE4D4),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -51,7 +51,7 @@ class TrackYourOrder extends StatelessWidget {
                                 prefixIcon: Icon(Icons.search),
                                 labelText: 'ORDER ID',
                                 labelStyle: TextStyle(
-                                  color: Color(0xFFee9ca7),
+                                  color: Color(0xFFEDA89D),
                                 ),
                                 border: InputBorder.none,
                               ),

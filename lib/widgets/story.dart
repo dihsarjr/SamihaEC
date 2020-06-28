@@ -11,7 +11,7 @@ class Story extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             iconTheme: new IconThemeData(color: Colors.black),
-            backgroundColor: Color(0xFFee9ca7),
+            backgroundColor: Color(0xFFFCE4D4),
             elevation: 0,
             actions: <Widget>[
               Container(
@@ -24,7 +24,7 @@ class Story extends StatelessWidget {
             ],
           ),
           drawer: Drawers(),
-          backgroundColor: Color(0xFFee9ca7),
+          backgroundColor: Color(0xFFFCE4D4),
           body: SingleChildScrollView(
             child: Container(
               padding: EdgeInsets.all(5),
@@ -47,19 +47,23 @@ class Story extends StatelessWidget {
                           child: Text(
                             'I Believe in',
                             style: TextStyle(
-                                fontSize: 40, fontWeight: FontWeight.bold),
+                              fontFamily: 'sensations',
+                              fontSize: 63,
+                            ),
                           ),
                         ),
                         Center(
                           child: Text(
                             'the power of the dreams',
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(
+                                fontFamily: 'Muli-Regular', fontSize: 23),
                           ),
                         ),
                         Center(
                           child: Text(
                             'Never stop believing in your dreams... ',
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(
+                                fontFamily: 'Muli-Regular', fontSize: 15),
                           ),
                         ),
                         Stack(
@@ -78,26 +82,45 @@ class Story extends StatelessWidget {
                           child: Container(
                             margin: EdgeInsets.all(20),
                             child: Text(
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
-                                'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'),
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.'
+                              'I Samia Alsaleh ,admire learning from different cultures and experiences and adopting there methods. I have Been inspirit by the natural beauty of the  far-east and have always wanted to share this experience with others  through my salon. we have created a sanctuary for ladies to unwind and connect with nature whilst receiving high quality services.',
+                              style: TextStyle(
+                                  fontFamily: 'Muli-Regular', fontSize: 15),
+                            ),
                           ),
                         ),
-                        Text('Yours truly.'),
-                        Text(
-                          'Smia Alsaleh',
-                          style: TextStyle(fontSize: 20),
+                        Container(
+                            margin: EdgeInsets.all(20),
+                            child: Text(
+                              'Yours truly.',
+                              style: TextStyle(
+                                  fontFamily: 'Muli-Regular', fontSize: 15),
+                            )),
+                        Container(
+                          margin: EdgeInsets.all(20),
+                          child: Text(
+                            'Smia Alsaleh',
+                            style: TextStyle(
+                                fontFamily: 'sensations', fontSize: 20),
+                          ),
                         ),
-                        Text('FOUNDER'),
+                        Container(
+                            margin: EdgeInsets.all(20),
+                            child: Text(
+                              'FOUNDER',
+                              style: TextStyle(
+                                  fontFamily: 'Muli-Regular', fontSize: 15),
+                            )),
                       ],
                     ),
                   ),

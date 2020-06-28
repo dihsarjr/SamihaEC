@@ -13,7 +13,7 @@ class OnTheWay extends StatelessWidget {
         Container(
           child: Text(
             'On the Way',
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontFamily: 'Muli', fontSize: 20),
           ),
           margin: EdgeInsets.only(bottom: 20),
         ),
@@ -24,18 +24,18 @@ class OnTheWay extends StatelessWidget {
               width: 15,
               height: 15,
               decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Color(0xFFee9ca7)),
+                  shape: BoxShape.circle, color: Color(0xFFEDA89D)),
             ),
             Container(
               width: 80,
               height: 5,
-              color: Color(0xFFee9ca7),
+              color: Color(0xFFEDA89D),
             ),
             Container(
               width: 15,
               height: 15,
               decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Color(0xFFee9ca7)),
+                  shape: BoxShape.circle, color: Color(0xFFEDA89D)),
             ),
             Container(
               width: 80,
@@ -50,6 +50,13 @@ class OnTheWay extends StatelessWidget {
             ),
           ],
         ),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Icon(
+            Icons.assignment_turned_in,
+            color: Color(0xFFEDA89D),
+          ),
+        )
       ],
     );
   }

@@ -8,7 +8,7 @@ class Drawers extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(color: Color(0xFFee9ca7)),
+            decoration: BoxDecoration(color: Color(0xFFEDA89D)),
             child: Center(
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +24,11 @@ class Drawers extends StatelessWidget {
                 ),
                 Text(
                   "LOGIN/SIGN UP",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontFamily: 'Muli',
+                  ),
                 ),
               ],
             )),
@@ -32,18 +36,25 @@ class Drawers extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 5),
             decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFFee9ca7), width: 1),
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
             ),
             child: ListTile(
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.local_mall,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "PRODUCTS",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
                     ),
                   ),
                 ],
@@ -53,18 +64,25 @@ class Drawers extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 5),
             decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFFee9ca7), width: 1),
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
             ),
             child: ListTile(
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.add_shopping_cart,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "CART",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
                     ),
                   ),
                 ],
@@ -74,18 +92,25 @@ class Drawers extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 5),
             decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFFee9ca7), width: 1),
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
             ),
             child: ListTile(
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.favorite_border,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "WISHLIST",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
                     ),
                   ),
                 ],
@@ -95,7 +120,35 @@ class Drawers extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: 5),
             decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFFee9ca7), width: 1),
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
+            ),
+            child: ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.offline_bolt,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
             ),
             child: ListTile(
               title: Row(
@@ -107,6 +160,119 @@ class Drawers extends StatelessWidget {
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
                       "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
+            ),
+            child: ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.shopping_cart,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
+            ),
+            child: ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.shopping_cart,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
+            ),
+            child: ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.shopping_cart,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              border: Border.all(color: Color(0xFFEDA89D), width: 1),
+            ),
+            child: ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.shopping_cart,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "products",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Muli',
+                      ),
                     ),
                   ),
                 ],

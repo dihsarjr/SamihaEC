@@ -38,22 +38,20 @@ class MyCart extends StatelessWidget {
                     right: 25,
                     left: 25,
                   ),
-                  color: Color(0xFFee9ca7),
+                  color: Color(0xFFEDA89D),
                   child: Container(
                     margin:
                         EdgeInsets.only(top: 5, bottom: 5, left: 20, right: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Expanded(
-                          child: Container(
-                            height: 120,
-                            width: 80,
-                            color: Colors.white,
-                            child: Image(
-                              fit: BoxFit.cover,
-                              image: NetworkImage(cartItems[index].image),
-                            ),
+                        Container(
+                          height: 80,
+                          width: 80,
+                          color: Colors.white,
+                          child: Image(
+                            fit: BoxFit.cover,
+                            image: NetworkImage(cartItems[index].image),
                           ),
                         ),
                         Flexible(
@@ -78,7 +76,7 @@ class MyCart extends StatelessWidget {
         child: SizedBox(
           width: 300,
           child: Divider(
-            color: Color(0xFFee9ca7),
+            color: Color(0xFFEDA89D),
           ),
         ),
       ),
@@ -98,13 +96,13 @@ class MyCart extends StatelessWidget {
         child: SizedBox(
           width: 300,
           child: Divider(
-            color: Color(0xFFee9ca7),
+            color: Color(0xFFEDA89D),
           ),
         ),
       ),
       Card(
         margin: EdgeInsets.only(right: 100, left: 100, top: 10, bottom: 20),
-        color: Color(0xFFee9ca7),
+        color: Color(0xFFEDA89D),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),
         ),

@@ -11,7 +11,7 @@ class Category extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             iconTheme: new IconThemeData(color: Colors.black),
-            backgroundColor: Color(0xFFee9ca7),
+            backgroundColor: Color(0xFFFCE4D4),
             elevation: 0,
             actions: <Widget>[
               Container(
@@ -24,7 +24,7 @@ class Category extends StatelessWidget {
             ],
           ),
           drawer: Drawers(),
-          backgroundColor: Color(0xFFee9ca7),
+          backgroundColor: Color(0xFFFCE4D4),
           body: SingleChildScrollView(
             child: Container(
               padding: EdgeInsets.all(5),
@@ -50,6 +50,7 @@ class Category extends StatelessWidget {
                     child: Text(
                       'Category',
                       style: TextStyle(
+                          fontFamily: 'Muli-Regular',
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 40),

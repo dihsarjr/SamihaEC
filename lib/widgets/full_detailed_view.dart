@@ -56,7 +56,7 @@ class FullDetailedView extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             iconTheme: new IconThemeData(color: Colors.black),
-            backgroundColor: Color(0xFFee9ca7),
+            backgroundColor: Color(0xFFFCE4D4),
             elevation: 0,
             actions: <Widget>[
               Container(
@@ -69,7 +69,7 @@ class FullDetailedView extends StatelessWidget {
             ],
           ),
           drawer: Drawers(),
-          backgroundColor: Color(0xFFee9ca7),
+          backgroundColor: Color(0xFFFCE4D4),
           body: SingleChildScrollView(
             child: Container(
               padding: EdgeInsets.all(0),
@@ -89,6 +89,7 @@ class FullDetailedView extends StatelessWidget {
                     child: Text(
                       'Item Name',
                       style: TextStyle(
+                          fontFamily: 'Muli-Regular',
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 40),
@@ -121,7 +122,7 @@ class FullDetailedView extends StatelessWidget {
                                       child: ClipOval(
                                         child: Material(
                                           color:
-                                              Color(0xFFee9ca7), // button color
+                                              Color(0xFFEDA89D), // button color
                                           child: InkWell(
                                             splashColor: Colors.black12,
                                             //TODO on press for the cart button in Detailed view
@@ -150,6 +151,7 @@ class FullDetailedView extends StatelessWidget {
                                   child: Text(
                                     'Clinic Plus Shampoo',
                                     style: TextStyle(
+                                        fontFamily: 'Muli',
                                         fontSize: 30,
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -163,6 +165,7 @@ class FullDetailedView extends StatelessWidget {
                                       child: Text(
                                         'Shampoo',
                                         style: TextStyle(
+                                            fontFamily: 'Muli',
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
@@ -171,6 +174,7 @@ class FullDetailedView extends StatelessWidget {
                                       child: Text(
                                         'QAR 300',
                                         style: TextStyle(
+                                            fontFamily: 'Muli',
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
@@ -187,30 +191,42 @@ class FullDetailedView extends StatelessWidget {
                                 ExpansionTile(
                                   title: Text(
                                     'How to use',
+                                    style: TextStyle(fontFamily: 'Muli'),
                                   ),
                                   children: <Widget>[
                                     ListTile(
-                                      title: Text('data'),
+                                      title: Text(
+                                        'data',
+                                        style: TextStyle(fontFamily: 'Muli'),
+                                      ),
                                     )
                                   ],
                                 ),
                                 ExpansionTile(
                                   title: Text(
                                     'Ingredients',
+                                    style: TextStyle(fontFamily: 'Muli'),
                                   ),
                                   children: <Widget>[
                                     ListTile(
-                                      title: Text('data'),
+                                      title: Text(
+                                        'data',
+                                        style: TextStyle(fontFamily: 'Muli'),
+                                      ),
                                     )
                                   ],
                                 ),
                                 ExpansionTile(
                                   title: Text(
                                     'Delivery and return',
+                                    style: TextStyle(fontFamily: 'Muli'),
                                   ),
                                   children: <Widget>[
                                     ListTile(
-                                      title: Text('data'),
+                                      title: Text(
+                                        'data',
+                                        style: TextStyle(fontFamily: 'Muli'),
+                                      ),
                                     )
                                   ],
                                 ),
@@ -221,6 +237,7 @@ class FullDetailedView extends StatelessWidget {
                                     Text(
                                       'New Arrivals',
                                       style: TextStyle(
+                                          fontFamily: 'Muli',
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold),
                                     ),
@@ -232,6 +249,7 @@ class FullDetailedView extends StatelessWidget {
                                       child: Text(
                                         'View all',
                                         style: TextStyle(
+                                            fontFamily: 'Muli',
                                             fontWeight: FontWeight.bold),
                                       ),
                                       //TODO View all setup
@@ -276,14 +294,21 @@ class FullDetailedView extends StatelessWidget {
                                             Text(
                                               newArrivals[index].title,
                                               style: TextStyle(
+                                                  fontFamily: 'Muli',
                                                   fontWeight: FontWeight.bold),
                                             ),
                                             Text(
                                               newArrivals[index].category,
-                                              style: TextStyle(fontSize: 15),
+                                              style: TextStyle(
+                                                  fontFamily: 'Muli',
+                                                  fontSize: 15),
                                             ),
                                             Text(
-                                                'QAR ${newArrivals[index].amount}'),
+                                              'QAR ${newArrivals[index].amount}',
+                                              style: TextStyle(
+                                                fontFamily: 'Muli',
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       );

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/sa_story2.dart';
+import 'package:samiaalsaleh/widgets/timelinePage.dart';
 
 void main() {
-  runApp(SaStory());
+  runApp(TimeLine());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xFFee9ca7),
+          backgroundColor: Color(0xFFFCE4D4),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -25,16 +25,12 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     Image.asset('images/abc.png'),
                     Center(
-                      child: Expanded(
-                        flex: 1,
-                        child: Text(
-                          'Hello \nBeautiful!',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 35,
-                            letterSpacing: 3.0,
-                            fontWeight: FontWeight.bold,
-                          ),
+                      child: Text(
+                        'Hello \nBeautiful!',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'sensations',
+                          fontSize: 120,
                         ),
                       ),
                     )
@@ -53,18 +49,15 @@ class MyApp extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    color: Color(0xFFf7797d),
+                    color: Color(0xFFEDA89D),
                     child: FlatButton(
                       child: Container(
                         child: Center(
-                          child: Expanded(
-                            flex: 1,
-                            child: Text(
-                              'Login',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
+                          child: Text(
+                            'Login',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ),
                       ),
