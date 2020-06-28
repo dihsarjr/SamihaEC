@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/track_your_order.dart';
+import 'package:samiaalsaleh/widgets/timelinePage.dart';
 
 void main() {
-  runApp(TrackYourOrder());
+  runApp(TimeLine());
 }
 
 class MyApp extends StatelessWidget {
