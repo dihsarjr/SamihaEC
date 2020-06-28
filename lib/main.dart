@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/timelinePage.dart';
+import 'package:samiaalsaleh/widgets/story.dart';
 
 void main() {
-  runApp(TimeLine());
+  runApp(Story());
 }
 
 class MyApp extends StatelessWidget {
