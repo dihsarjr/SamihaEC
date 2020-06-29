@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Drawers extends StatelessWidget {
+  final String clintName = "LOGIN/SIGN UP";
+  final String clintImage =
+      'https://scontent.fcok1-1.fna.fbcdn.net/v/t1.0-9/101577038_1443459189177088_2177197404279799808_o.jpg?_nc_cat=109&_nc_sid=730e14&_nc_ohc=YVnNBmcvMwoAX9Xw6X9&_nc_ht=scontent.fcok1-1.fna&oh=97cb34338cbfa995d5ef054b7da401ff&oe=5F1A9610';
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -19,11 +23,11 @@ class Drawers extends StatelessWidget {
                   backgroundColor: Colors.white,
                   child: CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage('images/girl.jpg'),
+                    backgroundImage: NetworkImage(clintImage),
                   ),
                 ),
                 Text(
-                  "LOGIN/SIGN UP",
+                  clintName,
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -127,12 +131,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.offline_bolt,
+                    Icons.card_giftcard,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "NEW ARRIVALS",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -154,12 +159,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.list,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "ORDERS",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -181,12 +187,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.map,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "TRACK YOUR ORDER",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -208,12 +215,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.people_outline,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "ABOUT US",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -235,12 +243,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.phone_iphone,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "CONTACT US",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -262,12 +271,13 @@ class Drawers extends StatelessWidget {
               title: Row(
                 children: <Widget>[
                   Icon(
-                    Icons.shopping_cart,
+                    Icons.format_indent_increase,
+                    color: Colors.white,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "products",
+                      "TERMS & CONDITIONS",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,

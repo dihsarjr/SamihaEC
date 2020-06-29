@@ -5,6 +5,16 @@ import 'package:samiaalsaleh/widgets/drawer.dart';
 import 'package:samiaalsaleh/widgets/navigation_bar.dart';
 
 class FullDetailedView extends StatelessWidget {
+  final String howToUseDetails =
+      'hfhxfhhjvdxhjvjvddhfhdkjfdjhgsdvhjdghvgddzjfhdhg';
+  final String ingredients = 'hfhxfhhjvdxhjvjvddhfhdkjfdjhgsdvhjdghvgddzjfhdhg';
+  final String delivery = 'hfhxfhhjvdxhjvjvddhfhdkjfdjhgsdvhjdghvgddzjfhdhg';
+
+  final String categoryName = 'Hair Care';
+  final String itemName = 'Clinic plus';
+  final String category = 'Shampoo';
+  final int price = 400;
+
   final List<NewArrivalsModels> newArrivals = [
     NewArrivalsModels(
         image:
@@ -87,7 +97,7 @@ class FullDetailedView extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.all(20),
                     child: Text(
-                      'Item Name',
+                      categoryName,
                       style: TextStyle(
                           fontFamily: 'Muli-Regular',
                           color: Colors.black,
@@ -149,7 +159,7 @@ class FullDetailedView extends StatelessWidget {
                                 Container(
                                   margin: EdgeInsets.all(10),
                                   child: Text(
-                                    'Clinic Plus Shampoo',
+                                    itemName,
                                     style: TextStyle(
                                         fontFamily: 'Muli',
                                         fontSize: 30,
@@ -163,7 +173,7 @@ class FullDetailedView extends StatelessWidget {
                                     Container(
                                       margin: EdgeInsets.all(10),
                                       child: Text(
-                                        'Shampoo',
+                                        category,
                                         style: TextStyle(
                                             fontFamily: 'Muli',
                                             fontWeight: FontWeight.bold),
@@ -172,7 +182,7 @@ class FullDetailedView extends StatelessWidget {
                                     Container(
                                       margin: EdgeInsets.all(10),
                                       child: Text(
-                                        'QAR 300',
+                                        'QAR $price',
                                         style: TextStyle(
                                             fontFamily: 'Muli',
                                             fontWeight: FontWeight.bold),
@@ -196,7 +206,7 @@ class FullDetailedView extends StatelessWidget {
                                   children: <Widget>[
                                     ListTile(
                                       title: Text(
-                                        'data',
+                                        howToUseDetails,
                                         style: TextStyle(fontFamily: 'Muli'),
                                       ),
                                     )
@@ -210,7 +220,7 @@ class FullDetailedView extends StatelessWidget {
                                   children: <Widget>[
                                     ListTile(
                                       title: Text(
-                                        'data',
+                                        ingredients,
                                         style: TextStyle(fontFamily: 'Muli'),
                                       ),
                                     )
@@ -224,7 +234,7 @@ class FullDetailedView extends StatelessWidget {
                                   children: <Widget>[
                                     ListTile(
                                       title: Text(
-                                        'data',
+                                        delivery,
                                         style: TextStyle(fontFamily: 'Muli'),
                                       ),
                                     )
