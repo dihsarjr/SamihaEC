@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samiaalsaleh/widgets/detailed_view.dart';
+import 'package:flutter/services.dart';
+import 'package:samiaalsaleh/widgets/home_page.dart';
 
 void main() {
-  runApp(DetailedView());
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  runApp(HomePage());
 }
 
 class MyApp extends StatelessWidget {
